@@ -292,7 +292,7 @@ Shows all available REST APIs and endpoints.
 ### 2. Authentication - Login API
 JWT-based authentication with access and refresh tokens.
 
-[Insert Login screenshot]
+![image alt](https://github.com/sarvaniperecharla-coder/Enterprise-Employee-Access-Management/blob/eb41138b8dc9d32869d7f48f87400a58e0426a6d/login2.png)
 
 ---
 
