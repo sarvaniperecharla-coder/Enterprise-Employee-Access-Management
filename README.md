@@ -280,6 +280,47 @@ The project includes:
 - Automated testing
 
 ---
+## API Screenshots
+
+### 1. API Documentation (Swagger)
+Shows all available REST APIs and endpoints.
+
+[Insert Swagger screenshot]
+
+---
+
+### 2. Authentication - Login API
+JWT-based authentication with access and refresh tokens.
+
+[Insert Login screenshot]
+
+---
+
+### 3. Employee and Department Management
+CRUD operations for employee and department management.
+
+[Insert Employee/Department screenshot]
+
+---
+
+### 4. Leave Request Creation
+Employees can submit leave requests with pending status.
+
+[Insert Leave creation screenshot]
+
+---
+
+### 5. Manager Leave Approval Workflow
+Managers can review pending leaves and approve requests.
+
+[Insert Approval screenshot]
+
+---
+
+### 6. Leave Balance Tracking
+Displays allowed, used, and remaining leave days.
+
+[Insert Leave balance screenshot]
 
 # Author
 
