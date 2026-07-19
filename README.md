@@ -306,7 +306,7 @@ CRUD operations for employee and department management.
 ### 4. Leave Request Creation
 Employees can submit leave requests with pending status.
 
-[Insert Leave creation screenshot]
+![image alt](https://github.com/sarvaniperecharla-coder/Enterprise-Employee-Access-Management/blob/51f96756cd181da1a49bb90f6e8fb6b2693b7adc/leaves.png)
 
 ---
 
