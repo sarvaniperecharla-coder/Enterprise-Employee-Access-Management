@@ -313,8 +313,7 @@ Employees can submit leave requests with pending status.
 ### 5. Manager Leave Approval Workflow
 Managers can review pending leaves and approve requests.
 
-[Insert Approval screenshot]
-
+![image alt](https://github.com/sarvaniperecharla-coder/Enterprise-Employee-Access-Management/blob/1e1080fcc571f1d60fbeae7af860ff1796f00bc3/approval.png)
 ---
 
 ### 6. Leave Balance Tracking
