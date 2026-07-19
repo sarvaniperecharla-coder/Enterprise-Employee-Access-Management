@@ -319,7 +319,7 @@ Managers can review pending leaves and approve requests.
 ### 6. Leave Balance Tracking
 Displays allowed, used, and remaining leave days.
 
-[Insert Leave balance screenshot]
+![image alt](https://github.com/sarvaniperecharla-coder/Enterprise-Employee-Access-Management/blob/556813a175e33f39b0c4fae7d5a68fbb160c11e7/balance.png)
 
 # Author
 
