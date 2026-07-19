@@ -5,7 +5,7 @@ This application helps organizations manage employees, departments, leave reques
 
 ---
 
-## Features
+# Features
 
 ## Authentication
 - User registration
@@ -50,7 +50,7 @@ This application helps organizations manage employees, departments, leave reques
 - Simple JWT
 
 ## Database
-- SQLite
+- MySQL
 
 ## API Documentation
 - Swagger UI
@@ -59,6 +59,7 @@ This application helps organizations manage employees, departments, leave reques
 ## Tools
 - Git
 - GitHub
+- MySQL Workbench
 
 ---
 
@@ -69,9 +70,9 @@ Enterprise-Employee-Access-Management
 
 │
 ├── employee-service
-│ │
+│
 │ ├── accounts
-│ │ └── User registration and authentication
+│ │ └── Authentication and user registration
 │ │
 │ ├── employees
 │ │ └── Employee management APIs
@@ -90,8 +91,6 @@ Enterprise-Employee-Access-Management
 │ │
 │ └── manage.py
 │
-├── requirements
-│
 ├── database
 │
 ├── docker
@@ -99,6 +98,8 @@ Enterprise-Employee-Access-Management
 ├── docs
 │
 ├── frontend
+│
+├── requirements
 │
 └── .gitignore
 
@@ -133,33 +134,82 @@ Windows:
 venv\Scripts\activate
 
 
-## Install Dependencies
+---
+
+# Install Dependencies
 
 
 pip install -r requirements/django.txt
 
 
-## Run Database Migrations
+---
+
+# Database Configuration
+
+This project uses MySQL.
+
+Create a database in MySQL:
+
+
+CREATE DATABASE employee_access_db;
+
+
+Update MySQL configuration in:
+
+
+employee-service/employee_service/settings.py
+
+
+Example:
+
+
+DATABASES = {
+"default": {
+"ENGINE": "django.db.backends.mysql",
+"NAME": "employee_access_db",
+"USER": "your_mysql_username",
+"PASSWORD": "your_mysql_password",
+"HOST": "localhost",
+"PORT": "3306",
+}
+}
+
+
+---
+
+# Run Migrations
+
+Navigate to employee-service:
 
 
 cd employee-service
 
+
+Run:
+
+
+python manage.py makemigrations
+
 python manage.py migrate
 
 
-## Create Superuser
+---
+
+# Create Admin User
 
 
 python manage.py createsuperuser
 
 
-## Run Server
+---
+
+# Run Development Server
 
 
 python manage.py runserver
 
 
-Application will run at:
+Application runs at:
 
 
 http://127.0.0.1:8000/
@@ -192,13 +242,13 @@ The project includes:
 
 # API Testing Flow
 
-1. Register employee account
+1. Register employee account using employee ID
 2. Login using username and password
 3. Generate JWT access token
 4. Authorize Swagger using Bearer token
-5. Test employee APIs
-6. Create leave requests
-7. Approve or reject leaves as manager
+5. Access employee and department APIs
+6. Apply leave request
+7. Approve or reject leave as manager
 8. Check dashboard and notifications
 
 ---
@@ -206,7 +256,7 @@ The project includes:
 # User Roles
 
 ## Admin
-- Manage complete system
+- Full system access
 - Manage employees and departments
 
 ## HR
