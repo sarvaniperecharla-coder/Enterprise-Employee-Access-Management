@@ -299,7 +299,7 @@ JWT-based authentication with access and refresh tokens.
 ### 3. Employee and Department Management
 CRUD operations for employee and department management.
 
-[Insert Employee/Department screenshot]
+![image alt](https://github.com/sarvaniperecharla-coder/Enterprise-Employee-Access-Management/blob/c51d05756c3962afc9389054f531d957853d50ba/employee.png)
 
 ---
 
