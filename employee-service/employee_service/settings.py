@@ -42,6 +42,10 @@ INSTALLED_APPS = [
     'django_filters',
     'employees',
     'departments',
+    'leaves',
+    'accounts',
+    'dashboard',
+    'notifications',
 ]
 
 MIDDLEWARE = [
@@ -131,7 +135,16 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
+
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ],
+
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.IsAuthenticated",
+    ],
 
     "DEFAULT_FILTER_BACKENDS": [
         "django_filters.rest_framework.DjangoFilterBackend",
@@ -139,10 +152,17 @@ REST_FRAMEWORK = {
         "rest_framework.filters.OrderingFilter",
     ],
 
-    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
-    "PAGE_SIZE": 5,
+    "DEFAULT_PAGINATION_CLASS":
+        "rest_framework.pagination.PageNumberPagination",
+
+    "PAGE_SIZE": 10,
 }
 
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Enterprise Employee Access & Leave Management API",
+    "DESCRIPTION": "Backend APIs for Employee and Leave Management System",
+    "VERSION": "1.0.0",
+}
 SPECTACULAR_SETTINGS = {
     "TITLE": "Enterprise Employee Access & Leave Management API",
     "DESCRIPTION": "Backend APIs for Employee and Leave Management System",
