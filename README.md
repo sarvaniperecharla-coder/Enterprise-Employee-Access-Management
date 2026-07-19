@@ -285,7 +285,7 @@ The project includes:
 ### 1. API Documentation (Swagger)
 Shows all available REST APIs and endpoints.
 
-[https://github.com/sarvaniperecharla-coder/Enterprise-Employee-Access-Management/blob/6d195911c1368b646b569e68d7580eadaf7034e0/swagger.png]
+![image alt](https://github.com/sarvaniperecharla-coder/Enterprise-Employee-Access-Management/blob/6d195911c1368b646b569e68d7580eadaf7034e0/swagger.png)
 
 ---
 
