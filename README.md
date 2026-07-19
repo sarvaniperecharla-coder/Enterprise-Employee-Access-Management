@@ -67,10 +67,9 @@ This application helps organizations manage employees, departments, leave reques
 
 
 Enterprise-Employee-Access-Management
-
 │
 ├── employee-service
-│
+│ │
 │ ├── accounts
 │ │ └── Authentication and user registration
 │ │
@@ -102,7 +101,6 @@ Enterprise-Employee-Access-Management
 ├── requirements
 │
 └── .gitignore
-
 
 ---
 
